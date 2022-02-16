@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:lineSpacingExtra="8sp"
+        android:textAlignment="viewEnd"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvOperaciones"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:lineSpacingExtra="8sp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/gray"
+        android:textSize="24sp"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultado" />
+
+    <Button
+        android:id="@+id/btnAC"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/gray"
+        android:text="@string/ac"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toStartOf="@+id/btnSigno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOperaciones" />
+
+    <Button
+        android:id="@+id/BtnDividir"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/dividir"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/BtnPorcentaje"
+        app:layout_constraintTop_toBottomOf="@+id/tvOperaciones"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/Btn7"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/darkgray"
+        android:text="@string/_7"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/Btn8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAC" />
+
+    <Button
+        android:id="@+id/BtnMultiplicar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/multiplicar"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/Btn9"
+        app:layout_constraintTop_toBottomOf="@+id/BtnDividir"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/Btn9"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/darkgray"
+        android:text="@string/_9"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/BtnMultiplicar"
+        app:layout_constraintStart_toEndOf="@+id/Btn8"
+        app:layout_constraintTop_toBottomOf="@+id/BtnPorcentaje" />
+
+    <Button
+        android:id="@+id/Btn8"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/darkgray"
+        android:text="@string/_8"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/Btn9"
+        app:layout_constraintStart_toEndOf="@+id/Btn7"
+        app:layout_constraintTop_toBottomOf="@+id/btnSigno" />
+
+    <Button
+        android:id="@+id/Btn4"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/darkgray"
+        android:text="@string/_4"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/Btn5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Btn7" />
+
+    <Button
+        android:id="@+id/Btn6"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/darkgray"
+        android:text="@string/_6"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/BtnRestar"
+        app:layout_constraintStart_toEndOf="@+id/Btn5"
+        app:layout_constraintTop_toBottomOf="@+id/Btn9" />
+
+    <Button
+        android:id="@+id/BtnRestar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/restar"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/Btn6"
+        app:layout_constraintTop_toBottomOf="@+id/BtnMultiplicar" />
+
+    <Button
+        android:id="@+id/Btn2"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/darkgray"
+        android:text="@string/_2"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/Btn3"
+        app:layout_constraintStart_toEndOf="@+id/Btn1"
+        app:layout_constraintTop_toBottomOf="@+id/Btn5" />
+
+    <Button
+        android:id="@+id/BtnSumar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/sumar"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Btn3"
+        app:layout_constraintTop_toBottomOf="@+id/BtnRestar"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/Btn3"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/darkgray"
+        android:text="@string/_3"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/BtnSumar"
+        app:layout_constraintStart_toEndOf="@+id/Btn2"
+        app:layout_constraintTop_toBottomOf="@+id/Btn6" />
+
+    <Button
+        android:id="@+id/Btn1"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/darkgray"
+        android:text="@string/_1"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/Btn2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Btn4" />
+
+    <Button
+        android:id="@+id/Btn5"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/darkgray"
+        android:text="@string/_5"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/Btn6"
+        app:layout_constraintStart_toEndOf="@+id/Btn4"
+        app:layout_constraintTop_toBottomOf="@+id/Btn8" />
+
+    <Button
+        android:id="@+id/Btn0"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/darkgray"
+        android:text="@string/_0"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnBorrar"
+        app:layout_constraintStart_toEndOf="@+id/BtnPunto"
+        app:layout_constraintTop_toBottomOf="@+id/Btn2"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/BtnPunto"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/darkgray"
+        android:text="@string/punto"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/Btn0"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Btn1" />
+
+    <Button
+        android:id="@+id/BtnResultado"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/resultado"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBorrar"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSumar" />
+
+    <Button
+        android:id="@+id/btnBorrar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/del"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/BtnResultado"
+        app:layout_constraintStart_toEndOf="@+id/Btn0"
+        app:layout_constraintTop_toBottomOf="@+id/Btn3" />
+
+    <Button
+        android:id="@+id/btnSigno"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/gray"
+        android:text="@string/signo"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/BtnPorcentaje"
+        app:layout_constraintStart_toEndOf="@+id/btnAC"
+        app:layout_constraintTop_toBottomOf="@+id/tvOperaciones" />
+
+    <Button
+        android:id="@+id/BtnPorcentaje"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/gray"
+        android:text="@string/porcentaje"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/BtnDividir"
+        app:layout_constraintStart_toEndOf="@+id/btnSigno"
+        app:layout_constraintTop_toBottomOf="@+id/tvOperaciones" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
